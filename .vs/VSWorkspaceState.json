@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\source",
+    "\\source\\repos",
+    "\\source\\repos\\election",
+    "\\source\\repos\\election\\election",
+    "\\source\\repos\\election\\election\\obj",
+    "\\source\\repos\\election\\election\\obj\\Debug",
+    "\\source\\repos\\election\\election\\obj\\Debug\\net5.0"
+  ],
+  "SelectedNode": "\\source\\repos\\election\\election\\obj\\Debug\\net5.0\\election.assets.cache",
+  "PreviewInSolutionExplorer": false
+}
