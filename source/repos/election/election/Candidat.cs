@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace election
 {
-    class Candidat
+    public class Candidat
     {
         public int id_candidat { get; set; }
         public string nom_candidat { get; set; }

@@ -13,5 +13,15 @@ namespace election
         public DbSet<Candidat> Candidats { get; set; }
         public DbSet<Administrateur> Administrateurs { get; set; }
         public DbSet<CentreElection> CentreElections { get; set; }
+        public DbSet<Electeur> Electeurs { get; set; }
+
+        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Candidat>()
+                        .HasMany<Electeur>(c => c.Electeurs)
+                        .WithOne(e => e.Candidat)
+                        .OnDelete(DeleteBehavior.SetNull);
+
+        }*/
     }
 }
