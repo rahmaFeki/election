@@ -15,6 +15,17 @@ namespace election
         public DbSet<CentreElection> CentreElections { get; set; }
         public DbSet<Electeur> Electeurs { get; set; }
 
+
+        //NB:Configuration a modifier pour chaqu'un entre nous !!!
+        /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-6362OT4\SQLEXPRESS;Database=ELECTIONDB;Trusted_Connection=True;");
+        }*/
+
+
+
+
+
         /*protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Candidat>()

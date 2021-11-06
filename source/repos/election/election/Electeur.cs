@@ -14,6 +14,7 @@ namespace election
         public string prenom_electeur { get; set; }
         public string cin_electeur { get; set; }
         public string genre_electeur { get; set; }
+        public CentreElection CentreElection { get; set; }
         /*public Candidat Condidat { get; set; }*/
 
     }

@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace election
 {
-    class CentreElection
+    public class CentreElection
     {
         public int id_centre { get; set; }
         public String libelle_centre { get; set; }
         public String adresse_centre { get; set; }
+        public IList<Electeur> electeurs { get; set; }
     }
 }
