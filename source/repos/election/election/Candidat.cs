@@ -14,6 +14,7 @@ namespace election
         public string prenom_candidat { get; set; }
         public string cin_candidat { get; set; }
         public string Image_candidat { get; set; }
+        public Administrateur Administrateur { get; set; }
 
     }
 }

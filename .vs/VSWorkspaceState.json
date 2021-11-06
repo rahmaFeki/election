@@ -5,10 +5,9 @@
     "\\source\\repos",
     "\\source\\repos\\election",
     "\\source\\repos\\election\\election",
-    "\\source\\repos\\election\\election\\obj",
     "\\source\\repos\\election\\election\\obj\\Debug",
-    "\\source\\repos\\election\\election\\obj\\Debug\\net5.0"
+    "\\source\\repos\\election\\election\\obj\\Release"
   ],
-  "SelectedNode": "\\source\\repos\\election\\election\\obj\\Debug\\net5.0\\election.assets.cache",
+  "SelectedNode": "\\source\\repos\\election\\election\\Administrateur.cs",
   "PreviewInSolutionExplorer": false
 }
