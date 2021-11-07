@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rahmaFk\\source\\repos\\elections\\source\\repos\\election\\election\\election.csproj": {}
+    "D:\\ing\\cour\\.net\\projet\\election\\election\\source\\repos\\election\\election\\election.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rahmaFk\\source\\repos\\elections\\source\\repos\\election\\election\\election.csproj": {
+    "D:\\ing\\cour\\.net\\projet\\election\\election\\source\\repos\\election\\election\\election.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rahmaFk\\source\\repos\\elections\\source\\repos\\election\\election\\election.csproj",
+        "projectUniqueName": "D:\\ing\\cour\\.net\\projet\\election\\election\\source\\repos\\election\\election\\election.csproj",
         "projectName": "election",
-        "projectPath": "C:\\Users\\rahmaFk\\source\\repos\\elections\\source\\repos\\election\\election\\election.csproj",
-        "packagesPath": "C:\\Users\\rahmaFk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rahmaFk\\source\\repos\\elections\\source\\repos\\election\\election\\obj\\",
+        "projectPath": "D:\\ing\\cour\\.net\\projet\\election\\election\\source\\repos\\election\\election\\election.csproj",
+        "packagesPath": "C:\\Users\\arwayahyaoui\\.nuget\\packages\\",
+        "outputPath": "D:\\ing\\cour\\.net\\projet\\election\\election\\source\\repos\\election\\election\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rahmaFk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\arwayahyaoui\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

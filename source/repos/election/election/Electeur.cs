@@ -9,7 +9,7 @@ namespace election
 {
     public class Electeur
     {
-        public int id_electeur { get; set; }
+        public int electeurId { get; set; }
         public string nom_electeur { get; set; }
         public string prenom_electeur { get; set; }
         public string cin_electeur { get; set; }

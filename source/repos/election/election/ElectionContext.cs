@@ -19,7 +19,7 @@ namespace election
         //NB:Configuration a modifier pour chaqu'un entre nous !!!
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=RAHMA\SQLEXPRESS;Database=ELECTIONDB;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-6362OT4\SQLEXPRESS;Database=ELECTIONDB;Trusted_Connection=True");
         }
 
 
