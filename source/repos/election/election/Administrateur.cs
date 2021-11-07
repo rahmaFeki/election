@@ -10,6 +10,8 @@ public class Administrateur
     public string cin_admin { get; set; }
     public string mot_de_passe { get; set; }
     public IList<election.Candidat> Candidats { get; set; }
+   
+    public CentreElection CentreElection { get; set;}
 
    
 }

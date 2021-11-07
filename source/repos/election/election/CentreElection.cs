@@ -12,5 +12,7 @@ namespace election
         public String libelle_centre { get; set; }
         public String adresse_centre { get; set; }
         public IList<Electeur> electeurs { get; set; }
+         public int AdministrateurId { get; set;}
+         public Administrateur Administrateur { get; set;}
     }
 }
