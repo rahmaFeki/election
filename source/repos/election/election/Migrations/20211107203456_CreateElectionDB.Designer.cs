@@ -10,8 +10,8 @@ using election;
 namespace election.Migrations
 {
     [DbContext(typeof(ElectionContext))]
-    [Migration("20211107192130_CreateELECTIONDB")]
-    partial class CreateELECTIONDB
+    [Migration("20211107203456_CreateElectionDB")]
+    partial class CreateElectionDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -105,6 +105,9 @@ namespace election.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int?>("CondidatcandidatId")
+                        .HasColumnType("int");
+
                     b.Property<int?>("centreElectionId")
                         .HasColumnType("int");
 
@@ -121,6 +124,8 @@ namespace election.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("electeurId");
+
+                    b.HasIndex("CondidatcandidatId");
 
                     b.HasIndex("centreElectionId");
 
@@ -149,11 +154,17 @@ namespace election.Migrations
 
             modelBuilder.Entity("election.Electeur", b =>
                 {
+                    b.HasOne("election.Candidat", "Condidat")
+                        .WithMany("Electeurs")
+                        .HasForeignKey("CondidatcandidatId");
+
                     b.HasOne("election.CentreElection", "CentreElection")
                         .WithMany("electeurs")
                         .HasForeignKey("centreElectionId");
 
                     b.Navigation("CentreElection");
+
+                    b.Navigation("Condidat");
                 });
 
             modelBuilder.Entity("Administrateur", b =>
@@ -161,6 +172,11 @@ namespace election.Migrations
                     b.Navigation("Candidats");
 
                     b.Navigation("CentreElection");
+                });
+
+            modelBuilder.Entity("election.Candidat", b =>
+                {
+                    b.Navigation("Electeurs");
                 });
 
             modelBuilder.Entity("election.CentreElection", b =>

@@ -2,7 +2,7 @@
 
 namespace election.Migrations
 {
-    public partial class CreateELECTIONDB : Migration
+    public partial class CreateElectionDB : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -76,11 +76,18 @@ namespace election.Migrations
                     prenom_electeur = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     cin_electeur = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     genre_electeur = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    centreElectionId = table.Column<int>(type: "int", nullable: true)
+                    centreElectionId = table.Column<int>(type: "int", nullable: true),
+                    CondidatcandidatId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Electeurs", x => x.electeurId);
+                    table.ForeignKey(
+                        name: "FK_Electeurs_Candidats_CondidatcandidatId",
+                        column: x => x.CondidatcandidatId,
+                        principalTable: "Candidats",
+                        principalColumn: "candidatId",
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Electeurs_CentreElections_centreElectionId",
                         column: x => x.centreElectionId,
@@ -104,15 +111,20 @@ namespace election.Migrations
                 name: "IX_Electeurs_centreElectionId",
                 table: "Electeurs",
                 column: "centreElectionId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Electeurs_CondidatcandidatId",
+                table: "Electeurs",
+                column: "CondidatcandidatId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Candidats");
+                name: "Electeurs");
 
             migrationBuilder.DropTable(
-                name: "Electeurs");
+                name: "Candidats");
 
             migrationBuilder.DropTable(
                 name: "CentreElections");

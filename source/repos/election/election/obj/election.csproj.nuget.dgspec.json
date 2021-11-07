@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ing\\cour\\.net\\projet\\election\\election\\source\\repos\\election\\election\\election.csproj": {}
+    "C:\\Users\\lenovo\\source\\repos\\election\\source\\repos\\election\\election\\election.csproj": {}
   },
   "projects": {
-    "D:\\ing\\cour\\.net\\projet\\election\\election\\source\\repos\\election\\election\\election.csproj": {
+    "C:\\Users\\lenovo\\source\\repos\\election\\source\\repos\\election\\election\\election.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ing\\cour\\.net\\projet\\election\\election\\source\\repos\\election\\election\\election.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\election\\source\\repos\\election\\election\\election.csproj",
         "projectName": "election",
-        "projectPath": "D:\\ing\\cour\\.net\\projet\\election\\election\\source\\repos\\election\\election\\election.csproj",
-        "packagesPath": "C:\\Users\\arwayahyaoui\\.nuget\\packages\\",
-        "outputPath": "D:\\ing\\cour\\.net\\projet\\election\\election\\source\\repos\\election\\election\\obj\\",
+        "projectPath": "C:\\Users\\lenovo\\source\\repos\\election\\source\\repos\\election\\election\\election.csproj",
+        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lenovo\\source\\repos\\election\\source\\repos\\election\\election\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\arwayahyaoui\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,10 +44,6 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.11, )"
-            },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[5.0.11, )"
