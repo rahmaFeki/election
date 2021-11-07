@@ -15,6 +15,6 @@ namespace election
         public string cin_candidat { get; set; }
         public string Image_candidat { get; set; }
         public Administrateur Administrateur { get; set; }
-
+        public IList<Electeur> Electeurs { get; set; }
     }
 }
