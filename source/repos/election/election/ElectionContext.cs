@@ -26,14 +26,7 @@ namespace election
 
 
 
-        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Candidat>()
-                        .HasMany<Electeur>(c => c.Electeurs)
-                        .WithOne(e => e.Candidat)
-                        .OnDelete(DeleteBehavior.SetNull);
-
-        }*/
+       
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Administrateur>()
