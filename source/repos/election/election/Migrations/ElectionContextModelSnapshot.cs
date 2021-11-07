@@ -154,7 +154,8 @@ namespace election.Migrations
                 {
                     b.HasOne("election.Candidat", "Condidat")
                         .WithMany("Electeurs")
-                        .HasForeignKey("CondidatcandidatId");
+                        .HasForeignKey("CondidatcandidatId")
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.HasOne("election.CentreElection", "CentreElection")
                         .WithMany("electeurs")

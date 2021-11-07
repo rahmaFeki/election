@@ -10,7 +10,7 @@ using election;
 namespace election.Migrations
 {
     [DbContext(typeof(ElectionContext))]
-    [Migration("20211107203456_CreateElectionDB")]
+    [Migration("20211107210017_CreateElectionDB")]
     partial class CreateElectionDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -156,7 +156,8 @@ namespace election.Migrations
                 {
                     b.HasOne("election.Candidat", "Condidat")
                         .WithMany("Electeurs")
-                        .HasForeignKey("CondidatcandidatId");
+                        .HasForeignKey("CondidatcandidatId")
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.HasOne("election.CentreElection", "CentreElection")
                         .WithMany("electeurs")

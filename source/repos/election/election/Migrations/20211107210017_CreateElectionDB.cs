@@ -87,7 +87,7 @@ namespace election.Migrations
                         column: x => x.CondidatcandidatId,
                         principalTable: "Candidats",
                         principalColumn: "candidatId",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.SetNull);
                     table.ForeignKey(
                         name: "FK_Electeurs_CentreElections_centreElectionId",
                         column: x => x.centreElectionId,
