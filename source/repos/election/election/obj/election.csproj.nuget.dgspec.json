@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ing\\cour\\.net\\projet\\election\\election\\source\\repos\\election\\election\\election.csproj": {}
+    "C:\\Users\\rahmaFk\\source\\repos\\elections\\source\\repos\\election\\election\\election.csproj": {}
   },
   "projects": {
-    "D:\\ing\\cour\\.net\\projet\\election\\election\\source\\repos\\election\\election\\election.csproj": {
+    "C:\\Users\\rahmaFk\\source\\repos\\elections\\source\\repos\\election\\election\\election.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ing\\cour\\.net\\projet\\election\\election\\source\\repos\\election\\election\\election.csproj",
+        "projectUniqueName": "C:\\Users\\rahmaFk\\source\\repos\\elections\\source\\repos\\election\\election\\election.csproj",
         "projectName": "election",
-        "projectPath": "D:\\ing\\cour\\.net\\projet\\election\\election\\source\\repos\\election\\election\\election.csproj",
-        "packagesPath": "C:\\Users\\arwayahyaoui\\.nuget\\packages\\",
-        "outputPath": "D:\\ing\\cour\\.net\\projet\\election\\election\\source\\repos\\election\\election\\obj\\",
+        "projectPath": "C:\\Users\\rahmaFk\\source\\repos\\elections\\source\\repos\\election\\election\\election.csproj",
+        "packagesPath": "C:\\Users\\rahmaFk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rahmaFk\\source\\repos\\elections\\source\\repos\\election\\election\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\arwayahyaoui\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rahmaFk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,7 +44,17 @@
               "target": "Package",
               "version": "[5.0.11, )"
             },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.11, )"
             }
@@ -64,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
