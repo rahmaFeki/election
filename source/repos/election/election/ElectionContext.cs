@@ -34,10 +34,15 @@ namespace election
                 .WithOne(b => b.Administrateur)
                 .HasForeignKey<CentreElection>(b => b.AdministrateurId);
 
+
             modelBuilder.Entity<Candidat>()
                         .HasMany<Electeur>(c => c.Electeurs)
                         .WithOne(e => e.Condidat)
                         .OnDelete(DeleteBehavior.SetNull);
+            modelBuilder.Entity<Administrateur>()
+                       .HasMany<Candidat>(c => c.Candidats)
+                       .WithOne(e => e.Administrateur)
+                       .OnDelete(DeleteBehavior.SetNull);
 
         }
     }
